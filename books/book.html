@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic Book Addition, Search, Removal, Favorite, and Clear Highlights</title>
+    <style>
+        .highlight {
+            background-color: yellow;
+        }
+        .favorite {
+            font-weight: bold;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Book List</h1>
+    <ul id="book-list">
+        <li>The Hunger Games</li>
+        <li>Divergent</li>
+        <li>Harry Potter</li>
+        <li>Lord of the Rings</li>
+    </ul>
+    <input type="text" id="book-title" placeholder="Enter book title">
+    <button onclick="addBook()">Add Book</button>
+    <br><br>
+    <input type="text" id="search-bar" placeholder="Search book title">
+    <button onclick="searchBook()">Search Book</button>
+    <button onclick="clearSearchHighlights()">Clear Highlights</button>
+    <br><br>
+    <button onclick="removeBook()">Remove Last Book</button>
+
+    <script src="book.js">  </script>   
+   
+</body>
+</html>

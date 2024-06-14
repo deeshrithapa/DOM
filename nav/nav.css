@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(235, 234, 234);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.nav {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-family: 'Times New Roman', Times, serif;    
+}
+
+.menu-toggle {
+    display: none; /* Initially hide the menu toggle */
+    cursor: pointer;
+}
+
+.menu-toggle i {
+    font-size: 24px;
+}
+
+.nav-items {
+    display: flex;
+    gap: 10px;
+}
+
+.signup, .login {
+    padding: 4px 8px;
+    border: none;
+    width: 100px;
+}
+
+.login {
+    background-color: rgb(234, 237, 239);
+    color: black;
+    border: 1px solid black;
+}
+
+.signup {
+    color: azure;
+    background-color: #0a4e93;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 60px); 
+}
+
+.form {
+    background-color: white;
+    width: 400px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.register {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.password-container {
+    position: relative;
+}
+
+.password-container input {
+    width: 100%;
+    padding-right: 40px;
+}
+
+.password-container i {
+    position: absolute;
+    right: 10px;
+    top: 38%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+button {
+    padding: 10px;
+    background-color: #0a4e93;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    align-self: center; 
+    width: 200px;
+}
+
+button:hover {
+    background-color: #083c6f;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; 
+    }
+    
+    .menu-toggle.show {
+        display: none; 
+    }
+    
+    .nav-items {
+        display: none;
+        position: absolute;
+        top: 50px;
+        right: 20px; 
+        background-color: white;
+        flex-direction: column;
+        padding: 10px;
+        border-radius: 4px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .nav-items.show {
+        display: flex; 
+    }
+}

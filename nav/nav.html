@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css">
+</head>
+<body>
+    <div class="nav">
+        <h1 class="title">ChatterBox</h1>
+        <div class="menu-toggle" id="menuToggle">
+            <i class="ri-menu-line"></i>
+        </div>
+        <div class="nav-items" id="navItems">
+            <button class="signup">Sign-Up</button>
+            <button class="login">Login</button>
+        </div>
+    </div>
+    <div class="form-container">
+        <div class="form">
+            <h1 class="register">Register</h1>
+            <form class="register-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" required />
+                <small class="error-message"></small>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" required />
+                <small class="error-message"></small>
+
+                <label for="password">Password</label>
+                <div class="password-container">
+                    <input type="password" id="password" required />
+                    <i class="ri-eye-line"></i>
+                </div>
+                <small class="error-message"></small>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="nav.js"></script>
+</body>
+</html>
