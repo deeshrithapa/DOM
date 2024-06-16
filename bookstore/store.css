@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c1e8ed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    width: 100%;
+    background-color: #4d6d90;
+    padding: 10px 0;
+    color: rgb(251, 251, 251);
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+nav h1 i {
+    margin-right: 10px;
+    font-size: 1.5em;
+}
+
+.container {
+    width: 80%;
+    max-width: 600px;
+    margin: 160px auto;
+    padding: 20px;
+    background-color: #f6f6f6;
+    border-radius: 8px;
+}
+
+#search-bar, #new-book-title {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#add-book-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #4d6d90;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#add-book-btn:hover {
+    background-color: #0f9be1;
+}
+
+.book-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.book-item {
+    padding: 10px;
+    margin: 5px 0;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #92b8c1;
+    border-radius: 4px;
+}
+
+.book-item span {
+    flex-grow: 1;
+}
+
+.book-item div {
+    display: flex;
+    gap: 10px;
+}
+
+.favorite-btn, .remove-btn {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    color: white;
+}
+
+.favorite-btn {
+    background-color: #4d6d90;
+}
+
+.favorite-btn:hover {
+    background-color: #1567be;
+}
+
+.remove-btn {
+    background-color: #9cc0e4;
+}
+
+.remove-btn:hover {
+    background-color: #6f84b9;
+}
+
+.favorite {
+    color: rgb(249, 249, 249);
+    font-weight: bold;
+}
